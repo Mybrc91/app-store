@@ -9,7 +9,7 @@
           <start-rating v-model="current.score" v-bind="startRatingProps"></start-rating></span></div>
         <h3>Introduce</h3>
         <div v-html="current.introduction"></div>
-        <swiper :options="swiperOption">
+        <swiper v-if="current.screens" :options="swiperOption">
           <swiper-slide v-for="(screen, index) in current.screens" :key="index"><img :src="screen"></swiper-slide>
           <div class="swiper-button-prev" slot="button-prev"></div>
           <div class="swiper-button-next" slot="button-next"></div>
@@ -45,7 +45,7 @@ export default {
       },
       swiperOption: {
         slidesPerView: 'auto',
-        centeredSlides: true,
+        // centeredSlides: true,
         spaceBetween: 30,
         navigation: {
           nextEl: '.swiper-button-next',

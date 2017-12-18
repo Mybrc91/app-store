@@ -8,7 +8,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    keyword: '%e6%97%b6%e6%97%b6%e5%bd%a9',
+    keyword: '',
     itemsPerPage: 20,
     items: [],
     maxpage: '5',

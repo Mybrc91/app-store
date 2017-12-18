@@ -34,7 +34,7 @@ export default {
     })
   },
   FETCH_LIST_DATA: ({ commit, dispatch, state }, { keyword, page }) => {
-    console.log('keyword:' + keyword + ';page:' + page)
+    // console.log('keyword:' + keyword + ';page:' + page)
     return new Promise(function (resolve, reject) {
       axios.get('https://bird.ioliu.cn/v1?url=http://appstore.vivo.com.cn/port/packages/?app_version=401&apps_per_page=30&page_index=' +
         page +

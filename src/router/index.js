@@ -21,7 +21,7 @@ export default new Router({
       path: '/:keyword/:page(\\d+)?', component: ItemList, props: true
     },
     {
-      path: '/', redirect: '/%e6%97%b6%e6%97%b6%e5%bd%a9'
+      path: '/', redirect: '/%e8%a7%86%e9%a2%91'
     }
   ]
 })
